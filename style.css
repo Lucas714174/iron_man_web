@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #000000;
+    background-image: url(img/iron_man.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+li{
+    color: aliceblue;
+    text-align: justify;
+    font-size: 12px;
+    font-family: nasa;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.telas_sec
+{
+    min-height: 100vh;
+    background: #000000;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;    
+}
+.static_ti{
+    position:fixed ;
+    width: 100%;
+    height: 100%;
+}
+.titulos
+{
+    color:#F6B61A ;
+    font-family: nasa;
+    text-align: center;
+    
+}
+p{
+    color: aliceblue;
+    font-family: nasa;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #F6B61A;
+    margin: 0 ;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2.5px #634816, 
+    0 0 0 1.5px #F6B61A;
+    animation: animate 20s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{ 
+    background: #E71E24;
+    box-shadow: 0 0 0  2.5px #bf010144 , 
+    0 0 0 1.5px #E71E24;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0.2);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(0.3);
+        }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:transparent;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #F6B61A;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: nasa;
+  }
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+@font-face {
+
+    font-family: nasa;
+    
+    src: url(fonte/nasa.otf);
+    
+    }
+.img_gif
+{
+    width: 30px;
+    height: 30px;
+}
